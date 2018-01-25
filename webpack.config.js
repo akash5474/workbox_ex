@@ -5,19 +5,14 @@ module.exports = {
     entry: './index.js',
 
     output: {
-        path: path.resolve(__dirname, 'dist'),
+        path: path.resolve(__dirname, 'dist/static'),
+        publicPath: '/static/',
         filename: '[name].js',
     },
 
     plugins: [
         new WorkboxPlugin.GenerateSW({
-            manifestTransforms: [
-                (entries) => {
-                    console.log('\n\nEntries:', entries);
-                    console.log('Length:', entries.length, '\n\n');
-                    return entries;
-                }
-            ]
+            swDest: '../service-worker.js',
         })
     ]
 }
