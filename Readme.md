@@ -28,7 +28,7 @@ from `"url": "/static/app/index.html"` to `"url": "/"`
 
 
 
-#### Note
+### Note
 
 **If you re-run the build (`npm run build`) remember to manually edit the service worker from:**
 
