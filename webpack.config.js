@@ -22,12 +22,23 @@ module.exports = {
             template: './index.template.html'
         }),
 
+        // Does not cache html generated server side.
+
         new WorkboxPlugin.GenerateSW({
             swDest: '../../service-worker.js',
-            navigateFallback: '/',
-            // templatedUrls: {
-            //     '/': 'some-val'
-            // }
-        })
+            navigateFallback: '/static/app/index.html',
+        }),
+
+
+        // Does not update revision for entry in
+        // precache-manifest if webpack assets' hash changes.
+
+        // new WorkboxPlugin.GenerateSW({
+        //     swDest: '../../service-worker.js',
+        //     navigateFallback: '/',
+        //     templatedUrls: {
+        //         '/': ['./server.js']
+        //     }
+        // }),
     ]
 }

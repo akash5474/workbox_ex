@@ -12,7 +12,7 @@
  */
 
 importScripts(
-  "/static/app/precache-manifest.42c85bb6ed427c603745be34cb4d4e4f.js",
+  "/static/app/precache-manifest.54e3f8cbd3d1c2093a9f7344c8757be7.js",
   "https://storage.googleapis.com/workbox-cdn/releases/3.0.0-alpha.6/workbox-sw.js"
 );
 
@@ -25,4 +25,4 @@ self.__precacheManifest = [].concat(self.__precacheManifest || []);
 workbox.precaching.suppressWarnings();
 workbox.precaching.precacheAndRoute(self.__precacheManifest, {});
 
-workbox.routing.registerNavigationRoute("/");
+workbox.routing.registerNavigationRoute("/static/app/index.html");

@@ -15,16 +15,10 @@ npm start
 2. Refresh the page
 
 
-### Workarounds
-
-Add `templatedUrls: '/'` to `GenerateSW` config options (currently commented in `webpack.config.js`)
-
-
-or
-
-
-Manually edit the entry for the generated index.html in the precache-manifest file
-from `"url": "/static/app/index.html"` to `"url": "/"`
+`webpack.config.js` has two configurations.
+The first config does not cache html generated server side.
+The second config can not update the revision the in preache-manifest for
+`"url": "/"` entry if webpack assets' hash changes.
 
 
 
