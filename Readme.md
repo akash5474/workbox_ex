@@ -30,7 +30,7 @@ from `"url": "/static/app/index.html"` to `"url": "/"`
 
 ### Note
 
-**If you re-run the build (`npm run build`) remember to manually edit the service worker from:**
+**If you re-run the build (`npm run build`) you will need to manually edit the service worker from:**
 
 ```javascript
 importScripts(
