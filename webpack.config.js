@@ -11,12 +11,6 @@ module.exports = {
         filename: 'js/[name].[hash].js',
     },
 
-    devServer: {
-        historyApiFallback: true,
-
-        contentBase: './dist'
-    },
-
     plugins: [
         new HtmlWebpackPlugin({
             template: './index.template.html'
