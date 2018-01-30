@@ -12,7 +12,7 @@
  */
 
 importScripts(
-  "precache-manifest.93d7f9a20b4a04043dfec01353e8660e.js",
+  "/static/app/precache-manifest.42c85bb6ed427c603745be34cb4d4e4f.js",
   "https://storage.googleapis.com/workbox-cdn/releases/3.0.0-alpha.6/workbox-sw.js"
 );
 
@@ -24,3 +24,5 @@ importScripts(
 self.__precacheManifest = [].concat(self.__precacheManifest || []);
 workbox.precaching.suppressWarnings();
 workbox.precaching.precacheAndRoute(self.__precacheManifest, {});
+
+workbox.routing.registerNavigationRoute("/");

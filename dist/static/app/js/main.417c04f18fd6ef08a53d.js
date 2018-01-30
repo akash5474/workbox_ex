@@ -57,7 +57,7 @@
 /******/ 	__webpack_require__.o = function(object, property) { return Object.prototype.hasOwnProperty.call(object, property); };
 /******/
 /******/ 	// __webpack_public_path__
-/******/ 	__webpack_require__.p = "";
+/******/ 	__webpack_require__.p = "/static/app/";
 /******/
 /******/ 	// Load entry module and return exports
 /******/ 	return __webpack_require__(__webpack_require__.s = 0);
@@ -71,7 +71,15 @@ function hello() {
     console.log('hello world');
 }
 
-hello();
+window.addEventListener('load', () => {
+    navigator.serviceWorker.register('/service-worker.js').then(registration => {
+        console.log('SW registered: ', registration);
+
+        hello();
+    }).catch(registrationError => {
+        console.log('SW reistration failed: ', registrationError);
+    });
+});
 
 /***/ })
 /******/ ]);
