@@ -11,7 +11,7 @@ npm start
 
 ### Steps to reproduce
 
-1. Open `http://localhost:8080` in Chrome (I recommend an icognito window)
+1. Open `http://localhost:8080` in Chrome (I recommend an incognito window)
 2. Refresh the page
 
 
