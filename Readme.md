@@ -1,4 +1,4 @@
-Example project demonstrating issues with GoogleChrome/Workbox v3.0.0-alpha.6
+Example project demonstrating issue with [GoogleChrome/Workbox](https://github.com/googlechrome/workbox) v3.0.0-alpha.6
 
 ### Run Project
 
@@ -11,7 +11,7 @@ npm start
 
 ### Steps to reproduce
 
-1. Open `http://localhost:8080` in Chrome (I recommend an icognito window)
+1. Open `http://localhost:8080` in Chrome (I recommend an incognito window)
 2. Refresh the page
 
 
@@ -22,9 +22,9 @@ The second config can not update the revision the in preache-manifest for
 
 
 
-#### Note
+### Note
 
-**If you re-run the build (`npm run build`) remember to manually edit the service worker from:**
+**If you re-run the build (`npm run build`) you will need to manually edit the service worker from:**
 
 ```javascript
 importScripts(
